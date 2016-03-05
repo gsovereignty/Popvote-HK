@@ -1,0 +1,7 @@
+// voteDisplay
+{
+  "votesHead": "Available Votes",
+  "mostVoted": "Most Voted",
+  "newest": "Newest",
+  "showAlreadyVoted": "Show items that I've already voted on"
+}
