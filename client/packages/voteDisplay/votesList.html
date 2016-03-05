@@ -1,21 +1,21 @@
 <template name="votesList">
 <div class="row">
     <div class="col-md-3 col-lg-2"></div>
-    <div class="col-md-9 col-lg-10"> <h3>Available Votes</h3></div>
+    <div class="col-md-9 col-lg-10"> <h3>{{_ "votesHead"}}</h3></div>
 
 </div>
     <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2">
         <b>Sort Votes</b>
         <div class="btn-group btn-group-sm" role="group">
-            <button type="button" class="{{popularityButton}} btn btn-primary popularity">Most voted</button>
-            <button type="button" class="{{freshnessButton}} btn btn-primary freshness">Newest</button>
+            <button type="button" class="{{popularityButton}} btn btn-primary popularity">{{_ "mostVoted"}}</button>
+            <button type="button" class="{{freshnessButton}} btn btn-primary freshness">{{_ "newest"}}</button>
         </div>
 
         <div class="checkbox">
             <label>
                 <input type="checkbox" value="" id="showvoted" name="showvoted">
-               Show items that I've already voted on
+               {{_ "showAlreadyVoted"}}
             </label>
         </div>
     </div>
