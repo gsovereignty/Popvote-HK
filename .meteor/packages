@@ -38,3 +38,5 @@ jasonford:login-page
 hitchcott:app-dump
 reactive-var
 mfpierre:chartist-js
+tap:i18n
+tap:i18n-ui

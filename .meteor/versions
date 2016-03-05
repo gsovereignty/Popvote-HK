@@ -5,6 +5,7 @@ aldeed:collection2-core@1.1.0
 aldeed:schema-deny@1.0.1
 aldeed:schema-index@1.0.1
 aldeed:simple-schema@1.5.3
+amplify@1.0.0
 anti:i18n@0.4.3
 autopublish@1.0.4
 autoupdate@1.2.4
@@ -21,6 +22,7 @@ caching-html-compiler@1.0.2
 callback-hook@1.0.4
 cfs:base-package@0.0.30
 cfs:filesystem@0.1.2
+cfs:http-methods@0.0.30
 cfs:storage-adapter@0.2.3
 check@1.1.0
 coffeescript@1.0.11
@@ -72,6 +74,7 @@ logging@1.0.8
 mdg:validation-error@0.2.0
 meteor@1.1.10
 meteor-base@1.0.1
+meteorspark:util@0.2.0
 meteortoys:toykit@2.2.1
 mfpierre:chartist-js@1.6.1
 minifiers@1.1.7
@@ -105,6 +108,8 @@ spacebars-compiler@1.0.7
 srp@1.0.4
 standard-minifiers@1.0.2
 stylus@2.511.1
+tap:i18n@1.7.0
+tap:i18n-ui@0.7.0
 templating@1.1.5
 templating-tools@1.0.0
 tracker@1.0.9
