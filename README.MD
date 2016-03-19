@@ -6,9 +6,11 @@ Live prototype: hk.popvote.org
 Australian version: https://github.com/gazhayes/Popvote-Australia
 
 ## What
-Popvote aims to keep political leaders honest by removing any ambiguity about what their constituents want them to do.
-A primary goal of Popvote is to rank all political leaders based on how they perform, thus providing the citizenry with a robust and transparent ranking and performance history.
-All Popvote HK users must be current holders of a permanent HKID and local phone number to prevent fabricated votes.
+Popvote aims to keep political leaders honest by removing any ambiguity about what their constituents want them to do. Constituents vote on issues (and create their own vote items) at all levels of government, and politicians are ranked based on how they perform in comparison to what the people want.
+
+A primary goal of Popvote is to rank all political leaders (local district council as well as Legco representatives) based on how they perform, thus providing the citizenry with a robust and transparent ranking and performance history when it comes to election time.
+
+All Popvote HK users must be current holders of a *permanent HKID and local phone number* to prevent fabricated votes.
 ## Building and running
 Popvote is written in [Meteor](https://www.meteor.com/install "Meteor Install Guide").
 
