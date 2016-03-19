@@ -1,4 +1,4 @@
-# POPVOTE
+# POPVOTE (Hong Kong)
 A reactive and verified *politician ranking* system for Hong Kong.
 
 Live prototype: hk.popvote.org
