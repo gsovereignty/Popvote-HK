@@ -1,5 +1,10 @@
 # POPVOTE
-A reactive and verified voting system for Hong Kong that is easily adaptable to other countries.
+A reactive and verified *politician ranking* system for Hong Kong.
+
+Live prototype: hk.popvote.org
+
+Australian version: https://github.com/gazhayes/Popvote-Australia
+
 ## What
 Popvote aims to keep political leaders honest by removing any ambiguity about what their constituents want them to do.
 A primary goal of Popvote is to rank all political leaders based on how they perform, thus providing the citizenry with a robust and transparent ranking and performance history.
