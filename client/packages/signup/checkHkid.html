@@ -1,4 +1,5 @@
 <template name="checkHkid">
+    Note: you may later be required to submit a picture of your HKID and address proof.
     <form class="main form page">
         <div class="form-group">
             <label class="control-label" for="title"></label>
@@ -8,13 +9,28 @@
                 <h5>Please enter your name as shown on your HKID</h5>
                 <input tabindex="2" maxlength="60" name="name" id="title" style="text-transform:uppercase" type="text" value="" placeholder="Your Name" class="form-control"/>
                 <h5>Please enter your building name or address</h5>
-                <input tabindex="3" maxlength="60" name="building" id="building" style="text-transform:uppercase" type="text" value="" placeholder="Your building name" class="form-control building"/>
+
+
+
+
+                    <div class="input-group">
+                        <input tabindex="3" type="text" style="text-transform:uppercase" class="form-control building" name="building" id="building" placeholder="Your building name..." />
+      <span class="input-group-btn">
+        <button class="btn btn-default checkaddress" type="button">Check</button>
+      </span>
+                    </div>
+
+
+
+
+
+
+
+
             </div>
         </div>
         <input type="submit" value="Next" class="btn btn-primary"/>
 
     </form>
-
-    T{{jsontest}}T
     <div class="row"><br />Note: your IP address has been recorded: {{ipaddress}} </div>
 </template>

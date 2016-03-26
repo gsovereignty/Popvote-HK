@@ -13,10 +13,24 @@ Meteor.call('checkHKID', idcode, function(error, result) { // display the error 
 
 },
 
-    'blur .building': function() { Meteor.call("checkAddress", function(error, results) {
-         console.log(results.content); //results.data should be a JSON object
-       // console.log(results.AddressLookupResult.RequestAddress[0].AddressLine[0]);
-    })}
+
+    'click .checkaddress': function(e) {
+        e.preventDefault();
+        var address = $('#building').val();
+        Meteor.call("checkAddress", address, function(error, results) {
+            console.log(results.content); //results.data should be a JSON object
+            // console.log(results.AddressLookupResult.RequestAddress[0].AddressLine[0]);
+            //blur reads value when focus changes
+        })}
+
+//    'blur .building': function(e) {
+//        e.preventDefault();
+//        var address = $('#building').val();
+//        Meteor.call("checkAddress", address, function(error, results) {
+//         console.log(results.content); //results.data should be a JSON object
+//       // console.log(results.AddressLookupResult.RequestAddress[0].AddressLine[0]);
+//        //blur reads value when focus changes
+//    })}
 
 });
 
