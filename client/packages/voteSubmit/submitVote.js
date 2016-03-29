@@ -67,9 +67,9 @@ Template.submitVote.events({
         Session.set('officialandunofficial', 'block');
         //PLACEHOLDER TEXT FOR FIELDS
         Session.set('voteofficial', 'OK, please input the official data below!');
-        Session.set('titleplaceholder', 'Please paste the official bill or council motion name here');
-        Session.set('linkplaceholder', 'Please paste a link to the offical bill or council motion here');
-        Session.set('detailsplaceholder', 'Please paste an official summary here');
+        Session.set('titleplaceholder', 'Official title of the Legco bill or council motion');
+        Session.set('linkplaceholder', 'Link to the offical bill or council motion');
+        Session.set('detailsplaceholder', 'Summary of the bill or motion');
         //METADATA
         Session.set('isofficial', true);
         official = true;
