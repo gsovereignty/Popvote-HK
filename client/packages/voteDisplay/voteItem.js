@@ -11,6 +11,10 @@ Template.voteItem.events({
     },
     'click .comments': function() {
         Router.go('commentList', {_id: this._id});
+    },
+
+    'click .subvotes': function() {
+        Router.go('displaySubvotes', {_id: this._id});
     }
 
 });
