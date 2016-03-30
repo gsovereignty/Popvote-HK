@@ -1,0 +1,18 @@
+<template name="homeScoreCard" xmlns="http://www.w3.org/1999/html">
+    <table id="politicians">
+        <tr><th width="50%">Politician Name</th><th width="25%">Indicated</th><th width="25%">Actual Vote</th></tr>
+
+        {{#each politicians}}
+            <tr style="display: {{display}}" ><td><b>{{name}}</b></td>
+                <td align="center">
+                    <h4><span class={{indicatedlabel}}>{{indicatedtext}}</span></h4>
+                </td>
+                <td align="center">
+                    <h4><span class={{actuallabel}}>{{actualtext}}</span></h4>
+                </td>
+
+            </tr>
+        {{/each}}
+
+    </table>
+</template>
