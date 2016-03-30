@@ -3,6 +3,9 @@
  */
 Template.frontPage.helpers({
     vote: function() {
+        return VotesCollection.find({}, {sort: {totalVotes: -1}, limit: 1})
+    },
+    allVotes: function() {
         return VotesCollection.find({}, {sort: {totalVotes: -1}})
     }
 });

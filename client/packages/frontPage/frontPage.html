@@ -1,11 +1,28 @@
 <template name="frontPage">
-
-
-
-
+    <div class="row">
             {{#each vote}}
                 {{> topVote}}
             {{/each}}
-
-
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 text-center pull-left">
+            <div class="well">
+                <div style="text-align: center">
+                    <h4>More Votes</h4>
+                    {{#each allVotes}}
+                    <div style="text-align: left"><a href="/votes/{{_id}}">{{title}}</a></div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 text-center pull-right">
+            <div class="panel panel-primary">
+                <div class="panel-heading">My Profile</div>
+                <div class="panel-body" style="background-color: azure">
+                    <div style="text-align: left"> Logged in as: {{currentUser.username}}</div>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+    </div>
 </template>
