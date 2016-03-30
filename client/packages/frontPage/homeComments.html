@@ -1,0 +1,17 @@
+<template name="homeComments">
+    {{> voteItem}}
+    {{#each comments}}
+        <div style="background-color: lightcyan;border-radius: 6px;margin-bottom: 10px;padding: 1%"> {{> homeCommentItem}}</div>
+    {{/each}}
+
+</template>
+
+<template name="homeCommentItem">
+
+
+    <p>{{commentBody}}</p>
+    <span style="display: block;float: left;font-size: smaller;"> <span class="likes glyphicon glyphicon-thumbs-up"></span> ({{commentLikes}})</span>
+    <span class="author">By <a href="#">{{commentAuthor}}</a>, {{livestamp commentSubmitted}}.</span>
+
+
+</template>
