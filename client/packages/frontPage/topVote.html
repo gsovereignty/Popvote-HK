@@ -1,0 +1,82 @@
+<template name="topVote">
+    <!-- Vote Header -->
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title"><a href="{{pathFor 'voteInfoPage'}}">{{title}}</a></h3>
+        </div>
+
+        <!-- Vote Main Info -->
+        <div class="panel-body" style="background-color: azure">
+            <div class="text-justify" style="width:100%;float:left;margin-bottom: 14px;">{{voteBody}}</div>
+            <div id="votebar"><div id="votebarhead"><h4>What the people want</h4></div>
+
+            <div class="progress" style="clear: both">
+
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:{{novotes}}%">
+                    {{novotes}}% NO
+                </div>
+
+                <div class="progress-bar progress-bar-success" style="width:{{yesvotes}}%">{{yesvotes}}% YES</div>
+            </div>
+            </div>
+            <div style="text-align: center"> <h4><span class="label label-default">Total Votes: {{totalVotes}}</span>   <span class="label label-success">Total Votes For: {{yesVotes}}</span>   <span class="label label-danger">Total Votes Against: {{noVotes}}</span></h4>
+            </div>
+
+
+
+        </div>
+
+        <!-- Top Comments, indicated votes -->
+
+        <div class="panel-body">
+            <div id="reps" style="width: 50%; float: left; display: block;">
+            <div style="text-align: center"><h4>What your representatives say</h4></div>
+                {{> homeScoreCard}}
+
+            </div>
+
+            <div id="comments" style="width: 50%; float: right; display: block;">
+                <div style="text-align: center"><h4>Top comments</h4></div>
+                {{> homeComments}}
+
+            </div>
+
+        </div>
+
+
+        <!-- Call to action -->
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-xs-6 col-md-8 pull-left">
+                    <div class="row">
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 col-md-12 pull-left">
+                            <!--  <p><b>Jurisdiction:</b><span class="text-uppercase small"> {{jurisName}} <a href="{{officialLink}}" class="text-capitalize">{{officialStatus}}</a></span></p> -->
+                            <button class="btn btn-default btn-sm subvotes" type="button">
+                                Subvotes <span class="badge">{{subvotes}}</span>
+                            </button>
+                            <button class="btn btn-default btn-sm comments" type="button">
+                                Comments <span class="badge">{{comments}}</span>
+                            </button>
+                        </div>
+                    </div></div>
+
+                <div class="col-xs-6 col-sm-5 col-md-4 text-center pull-right"><div class="btn-group-vertical" role="group" aria-label="...">
+                    <button type="button" class="btn btn-danger novote btn-lg {{disabled}}">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Vote NO
+                    </button>
+
+                    <button type="button" class="btn btn-success yesvote btn-lg {{disabled}}">
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Vote YES
+                    </button>
+                </div></div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</template>
