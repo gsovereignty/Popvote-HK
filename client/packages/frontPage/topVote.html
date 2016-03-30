@@ -7,8 +7,8 @@
 
         <!-- Vote Main Info -->
         <div class="panel-body" style="background-color: azure">
-            <div class="text-justify" style="width:100%;float:left;margin-bottom: 14px;">{{voteBody}}</div>
-            <div id="votebar"><div id="votebarhead"><h4>What the people want</h4></div>
+            <div class="text-justify" style="margin-bottom: 10px;">{{voteBody}}</div>
+            <div id="votebar"><div style="text-align: center;"><h4>What the people want</h4></div>
 
             <div class="progress" style="clear: both">
 
@@ -29,48 +29,39 @@
         <!-- Top Comments, indicated votes -->
 
         <div class="panel-body">
-            <div id="reps" style="width: 50%; float: left; display: block;">
-            <div style="text-align: center"><h4>What your representatives say</h4></div>
+            <div id="reps" style="width: 49%; float: left;display: block;background-color: azure;" class="well well-sm">
+            <div style="text-align: center"><h4>What your representatives say <span class="label label-default"></span></h4></div>
                 {{> homeScoreCard}}
 
             </div>
 
-            <div id="comments" style="width: 50%; float: right; display: block;">
-                <div style="text-align: center"><h4>Top comments</h4></div>
+            <div id="comments" style="width: 49%; float: right; display: block;background-color: azure;" class="well well-sm">
+                <div style="text-align: center"><h4>Top comments <button class="btn btn-default btn-sm comments" type="button"><span class="badge">{{comments}}</span>
+                </button></h4></div>
                 {{> homeComments}}
 
             </div>
 
-        </div>
+
 
 <!-- Top subvote -->
-        <div class="panel-body" style="width: 50%;">
-            <div style="text-align: center"><h4>Popular Subvotes</h4></div>
+        <div class="well well-sm" style="width: 49%; float: right; background-color: azure;">
+            <div style="text-align: center"><h4>Popular Subvotes <button class="btn btn-default btn-sm subvotes" type="button"><span class="badge">{{subvotes}}</span></button></h4></div>
+
             {{#each subvote}}
                 {{>homeSubvoteItem}}
             {{/each}}
 
 
-        </div>
+        </div></div>
 
 
         <!-- Call to action -->
         <div class="panel-footer">
             <div class="row">
                 <div class="col-xs-6 col-md-8 pull-left">
-                    <div class="row">
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-2 col-md-12 pull-left">
-                            <!--  <p><b>Jurisdiction:</b><span class="text-uppercase small"> {{jurisName}} <a href="{{officialLink}}" class="text-capitalize">{{officialStatus}}</a></span></p> -->
-                            <button class="btn btn-default btn-sm subvotes" type="button">
-                                Subvotes <span class="badge">{{subvotes}}</span>
-                            </button>
-                            <button class="btn btn-default btn-sm comments" type="button">
-                                Comments <span class="badge">{{comments}}</span>
-                            </button>
-                        </div>
-                    </div></div>
+
+                </div>
 
                 <div class="col-xs-6 col-sm-5 col-md-4 text-center pull-right"><div class="btn-group-vertical" role="group" aria-label="...">
                     <button type="button" class="btn btn-danger novote btn-lg {{disabled}}">
