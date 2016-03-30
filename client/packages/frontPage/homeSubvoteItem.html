@@ -1,0 +1,19 @@
+<template name="homeSubvoteItem">
+    <div class="panel panel-info" style="display:{{voteDisplay}};">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{subvoteTitle}}</h3>
+        </div>
+        <div class="panel-body">
+            <div class="text-justify" style="width:96%;float:left;">{{subvoteDescription}}</div>
+
+            <div class="progress" style="clear: both">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:{{novotes}}%">
+                    {{novotes}}% NO
+                </div>
+                <div class="progress-bar progress-bar-success" style="width:{{yesvotes}}%">{{yesvotes}}% YES</div>
+            </div>
+
+
+        </div>
+        </div>
+</template>

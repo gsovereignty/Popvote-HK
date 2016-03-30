@@ -51,6 +51,10 @@ Template.topVote.helpers({
         }
     }},
 
-    disabled: function() {if(Meteor.user()){return ""} else {return "disabled"}}
+    disabled: function() {if(Meteor.user()){return ""} else {return "disabled"}},
+
+    subvote: function() {
+        return Subvote.find({voteId: this._id}, {limit: 3});
+    }
 
 });
