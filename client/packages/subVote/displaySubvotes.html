@@ -2,7 +2,7 @@
     {{> voteItem}}
         <br />
     {{#if currentUser}}
-        {{> subvoteSubmit}}
+        {{> newSubvote}}
     {{else}}
         <p>Please log in or register to create a subvote.</p>
     {{/if}}
@@ -78,7 +78,7 @@
 </template>
 
 
-<template name="subvoteSubmit">
+<template name="newSubvote">
     <h3>Create a new subvote for this item</h3>
     <form class="main form page">
         <div class="form-group">
