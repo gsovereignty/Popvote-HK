@@ -12,7 +12,6 @@ twbs:bootstrap
 iron:router
 ian:accounts-ui-bootstrap-3
 aldeed:collection2
-standard-minifiers
 meteor-base
 mobile-experience
 mongo
@@ -41,3 +40,5 @@ mfpierre:chartist-js
 tap:i18n
 tap:i18n-ui
 http
+standard-minifier-css
+standard-minifier-js
