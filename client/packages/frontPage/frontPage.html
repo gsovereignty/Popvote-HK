@@ -15,6 +15,7 @@
                 {{#each allVotes}}
                      <li class="list-group-item"><a href="/votes/{{_id}}">{{title}} <span class="label label-default label-pill pull-xs-right">{{totalVotes}}</span></a></li>
                 {{/each}}
+                <li class="list-group-item list-group-item-info" style="text-align: center"><a href="{{pathFor 'votesList'}}">VIEW ALL VOTES</a></li>
             </ul>
 
 
