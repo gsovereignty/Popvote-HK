@@ -7,7 +7,18 @@
 
         <!-- Vote Main Info -->
         <div class="panel-body" style="background-color: azure">
-            <div class="text-justify" style="margin-bottom: 10px;">{{voteBody}}</div>
+            <div class="text-justify col-md-10 col-lg-10 col-sm-9 col-xs-9" style="margin-bottom: 10px;float: left">{{voteBody}}</div>
+            <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3" style="float: right">
+                <div class="btn-group-vertical" role="group" aria-label="...">
+                    <button type="button" class="btn btn-danger novote btn-lg {{disabled}}">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Vote NO
+                    </button>
+
+                    <button type="button" class="btn btn-success yesvote btn-lg {{disabled}}">
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Vote YES
+                    </button>
+                </div>
+            </div>
             <div id="votebar"><div style="text-align: center;"><h4>What the people want</h4></div>
 
             <div class="progress" style="clear: both">
@@ -58,21 +69,7 @@
 
         <!-- Call to action -->
         <div class="panel-footer">
-            <div class="row">
-                <div class="col-xs-6 col-md-8 pull-left">
 
-                </div>
-
-                <div class="col-xs-6 col-sm-5 col-md-4 text-center pull-right"><div class="btn-group-vertical" role="group" aria-label="...">
-                    <button type="button" class="btn btn-danger novote btn-lg {{disabled}}">
-                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Vote NO
-                    </button>
-
-                    <button type="button" class="btn btn-success yesvote btn-lg {{disabled}}">
-                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Vote YES
-                    </button>
-                </div></div>
-            </div>
 
 
         </div>
