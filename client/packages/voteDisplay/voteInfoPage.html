@@ -1,21 +1,28 @@
 <template name="voteInfoPage">
     <div id="voteinfo">
     {{> voteItem}}
-    {{> voteInspector}}
     {{> scoreCard}}
+        {{> voteInspector}}
     </div>
 </template>
 
 <template name="voteInspector">
-    <div id="subvotes"><a href="{{pathFor 'displaySubvotes'}}">Create new subvote</a><br /> </div>
-<h4>Vote Statistics</h4>
+    <div class="col-xs-6 col-sm-6 col-md-6 text-center pull-right">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Vote Statistics
+            </div>
     <div id="votecounts">{{_ "votesAgainst"}} {{noVotes}}<br />Votes For: {{yesVotes}}<br /> </div>
-
-<h4>Vote Details</h4>
+            <div class="panel-heading">
+                Vote Details
+            </div>
+<div  style="padding: 10px;">
     <div id="votejurisdiction"><u>Vote Jurisdiction:</u> {{jurisName}}</div>
-    <div id="officialdata" style="display: {{displaylink}}"> <a href="{{officialLink}}">Official Link</a></div> <!-- Make hidden when not official !-->
-    <div id="votedescription" style="display: {{displayproblem}}"><u>Why a decision is needed:</u> {{problem}} </div>
-    <div id="details" style="display: {{displaydetails}}"><u>Further details:</u> {{voteBody}}</div>
-    <div id="authordetails">This vote was created by <i>{{author}}</i> {{livestamp submitted}}.</div>
-
+    <div id="officialdata" style="display: {{displaylink}}"> <a href="{{officialLink}}">Official Legco or Council Information</a></div> <!-- Make hidden when not official !-->
+    <div id="votedescription" style="text-align: justify;display: {{displayproblem}}"><u>Why a decision is needed:</u> {{problem}} </div>
+    <div id="details" style="text-align: justify;display: {{displaydetails}}"><u>Further details:</u> {{voteBody}}</div>
+</div>
+            <div class="panel-footer">
+    <div id="authordetails">This vote was created by <i>{{author}}</i> {{livestamp submitted}}.</div></div>
+    </div></div>
 </template>
