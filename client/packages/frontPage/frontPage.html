@@ -5,15 +5,22 @@
             {{/each}}
     </div>
     <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-6 text-center pull-left">
-            <div class="well">
-                <div style="text-align: center">
-                    <h4>More Votes</h4>
-                    {{#each allVotes}}
-                    <div style="text-align: left"><a href="/votes/{{_id}}">{{title}}</a></div>
-                    {{/each}}
-                </div>
-            </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 pull-left">
+
+
+            <ul class="list-group">
+                <span class="list-group-item active">
+                    More Votes
+                </span>
+                {{#each allVotes}}
+                     <li class="list-group-item"><a href="/votes/{{_id}}">{{title}} <span class="label label-default label-pill pull-xs-right">{{totalVotes}}</span></a></li>
+                {{/each}}
+            </ul>
+
+
+
+
+
         </div>
         <div class="col-xs-6 col-sm-6 col-md-6 text-center pull-right">
             <div class="panel panel-primary">
