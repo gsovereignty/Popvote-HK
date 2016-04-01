@@ -8,6 +8,7 @@ Template.frontPage.helpers({
     allVotes: function() {
         return VotesCollection.find({}, {sort: {totalVotes: -1}, skip: 1, limit: 10})
     }
+
 });
 
 Template.frontPage.events({
