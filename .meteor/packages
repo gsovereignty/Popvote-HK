@@ -42,3 +42,4 @@ tap:i18n-ui
 http
 standard-minifier-css
 standard-minifier-js
+dpid:user-presence
