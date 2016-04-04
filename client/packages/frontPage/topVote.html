@@ -1,16 +1,19 @@
 <template name="topVote">
+
     <!-- Vote Header -->
     <div class="panel panel-primary">
         <div class="panel-heading">
             <!-- <div class="row"><div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 pull-left"></div><div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 pull-right" style="text-align: right;"><span class="panel-title" style="font-size: 100%"><a href="{{pathFor 'votesList'}}">View Other Votes <span class="glyphicon glyphicon-eye-open"></span></a></span></div></div> -->
 
-            <span class="panel-title" style="text-align: center;"><h4><i class="fa fa-line-chart"></i> {{title}}</h4></span>
+            <span class="panel-title" style="text-align: center;"><h4><span class="simptip-position-top" data-tooltip="This vote is currently the most popular"><i class="fa fa-line-chart"></i></span> {{title}}</h4></span>
 
         </div>
 
         <!-- Vote Main Info -->
         <div class="panel-body" style="background-color: azure">
-            <div class="text-justify col-md-10 col-lg-10 col-sm-9 col-xs-9" style="margin-bottom: 10px;float: left">{{voteBody}}</div>
+            <div class="text-justify col-md-10 col-lg-10 col-sm-9 col-xs-9" style="margin-bottom: 10px;float: left">
+                {{voteBody}}
+            </div>
             <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3" style="float: right">
                 <div class="btn-group-vertical" role="group" aria-label="...">
                     <button type="button" class="btn btn-danger novote btn-lg {{disabled}}">
@@ -82,5 +85,4 @@
 
 
     </div>
-
 </template>
