@@ -3,21 +3,25 @@
 
 
       <div id="headdata">
-          <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              Menu
-              <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <li><a href="{{pathFor 'votesList'}}">All votes</a></li>
-              <li><a href="{{pathFor 'submitVote'}}">Create a new vote</a></li>
-          </ul>
-              <a href="{{pathFor 'frontPage'}}">Home</a> | <a href="https://github.com/gazhayes/Popvote-HK">
-              <span class="glyphicon glyphicon-console" aria-hidden="true"></span> GITHUB </a>
+
+
+              <a href="{{pathFor 'frontPage'}}">Home</a> |
+              <a href="{{pathFor 'votesList'}}">All Votes</a> |
+              <a href="{{pathFor 'submitVote'}}">Create a New Vote</a>
+
               <div id="loginbuttons">{{#if currentUser}}| <a href="{{pathFor 'registerDetails'}}">Please register your voter details</a> {{/if}}| {{> loginButtons}}
                   <div class="col-md-2 col-lg-2 col-sm-3 col-xs-4x pull-right" style="text-align: right;"> {{> i18n_buttons}}</div>
               </div>
-           </div>
+
+          &nbsp;&nbsp;&nbsp;<span class="dropdown" style="text-align: right"> <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Help Popvote
+                  <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+                  <li><a href="https://github.com/gazhayes/Popvote-HK"><span class="glyphicon glyphicon-console" aria-hidden="true"></span> GITHUB </a></li>
+              </ul>
+              </span>
+
       </div>
 
 </template>
