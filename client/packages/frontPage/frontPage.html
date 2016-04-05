@@ -9,8 +9,8 @@
 
 
             <ul class="list-group">
-                <span class="list-group-item active">
-                    More Votes
+                <span class="list-group-item active" style="text-align: center">
+                    <h4>More Votes</h4>
                 </span>
                 {{#each allVotes}}
                      <li class="list-group-item"><a href="/votes/{{_id}}">{{title}} <span class="label label-default label-pill pull-xs-right">{{totalVotes}}</span></a></li>
@@ -25,7 +25,7 @@
         </div>
         <div class="col-xs-6 col-sm-6 col-md-6 text-center pull-right">
             <div class="panel panel-primary">
-                <div class="panel-heading">My Profile</div>
+                <div class="panel-heading"><h4>My Profile</h4></div>
                 <div class="panel-body" style="background-color: azure">
                     <div style="text-align: left; margin-bottom: 10px;"> <b>Logged in as:</b> <i>{{currentUser.username}}</i> <br />
 
