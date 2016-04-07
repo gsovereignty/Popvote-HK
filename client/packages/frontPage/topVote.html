@@ -54,23 +54,23 @@
             </div>
 
             <div id="comments" style="width: 49%; float: right; display: block;background-color: azure;" class="well well-sm">
-                <div style="text-align: center"><h4>Top comments <button class="btn btn-default btn-sm comments" type="button"><span class="badge">{{comments}}</span>
-                </button></h4></div>
+                <div style="text-align: center"><h4><i class="fa fa-line-chart"></i> Top comments </h4></div>
                 {{> homeComments}}
-
+                <button class="btn btn-default btn-sm comments" type="button">All Comments <span class="badge">{{comments}}</span>
+                </button>
             </div>
 
 
 
 <!-- Top subvote -->
         <div class="well well-sm" style="width: 49%; float: right; background-color: azure;">
-            <div style="text-align: center"><h4>Most Popular Subvotes <button class="btn btn-default btn-sm subvotes" type="button"><span class="badge">{{subvotes}}</span></button></h4></div>
+            <div style="text-align: center"><h4><i class="fa fa-line-chart"></i> Best Subvotes </h4></div>
 
             {{#each subvote}}
                 {{>homeSubvoteItem}}
             {{/each}}
 
-
+            <button class="btn btn-default btn-sm subvotes" type="button">All Subvotes <span class="badge">{{subvotes}}</span></button>
         </div></div>
 
 
