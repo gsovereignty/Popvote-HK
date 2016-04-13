@@ -1,12 +1,12 @@
 <template name="submitVote">
-
+{{#if currentUser}}
 <h3>Create a new vote</h3>
         <form class="main form page">
             <div class="form-group">
                 <label class="control-label" for="title"></label>
                 <div class="controls">
                     <h4>Please select where this vote applies</h4>
-                    <div id="votetype"><div id="parliament" class="btn {{data 'parliamentButton'}}">Hong Kong Territory</div> <div id="mycouncil" class="btn {{data 'councilButton'}}">Only my council</div> </div>
+                    <div id="votetype"><div id="parliament" class="btn {{data 'parliamentButton'}}">Hong Kong Territory</div> <div id="mycouncil" class="btn {{data 'councilButton'}}">Only my disctrict council</div> </div>
                     <h4>Is this an official vote?</h4>
                     <div id="official" class="btn {{data 'officialButton'}}">This is an official Legco vote</div> <div id="unofficial" class="btn {{data 'nonOfficialButton'}}">This is my own idea</div>
                     <h4>{{data 'voteofficial'}}</h4>
@@ -24,5 +24,13 @@
         </form>
 
     <hr />
+ <div class="well" style="width: 180px;">
+     <h4>Developer Tools</h4>
     {{> appDumpUI}}
+ </div>
+    {{else}}
+    <h4>You must be logged in to create a vote.</h4><br />
+    Please log in or create an account.
+{{/if}}
+
 </template>
